@@ -86,7 +86,7 @@ class FairVisionCNN(nn.Module):
 @st.cache_resource
 def load_model():
     checkpoint = torch.load(
-        "fairvision_demo_model.pt",
+        "mitigated_balanced_sampler.pt",
         map_location=torch.device("cpu"),
         weights_only=False,
     )
